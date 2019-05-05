@@ -6,10 +6,12 @@ using UnityEngine.SceneManagement;
 public class TestCollision : MonoBehaviour
 {
     public GameObject other;
+    public GameObject endPanel;
     static public int[] complete = new int[] { 0, 0 };
     Player data;
     private void Start()
     {
+        endPanel.SetActive(false);
         data = new Player();
         data.LoadPlayer();
         print(complete[0]);
@@ -21,12 +23,11 @@ public class TestCollision : MonoBehaviour
         //For stage 1 or tutorial stage
         if(SceneManager.GetActiveScene().name == "TestSceneForMenu")
         {
+            endPanel.SetActive(true);
             complete[0] = 100;
             
             print(complete[0]);
             data.SavePlayerData();
-            
-            SceneManager.LoadScene(0);
 
             print(complete[0]);
         }
