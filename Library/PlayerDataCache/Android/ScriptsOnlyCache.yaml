@@ -11,13 +11,22 @@ ScriptsOnlyBuild:
     - UnityStandardAssets.Vehicles.Car.Suspension
     - UnityStandardAssets.Vehicles.Car.WheelEffects
     Assembly-CSharp.dll:
+    - EnemyController
+    - GunShooting
     - LevelLoader
     - RespawnCollider
     - ReturnToMenu
+    - RotateCam
+    - ShootableBox
     - StopCar
+    - SwapCamera
     - TestCollision
     - TestSave
+    - Tip1Collider
+    - Tip2Collider
+    - Tip3Collider
     - UIManager
+    - UnityEngine.AI.NavMeshSurface
     - VolumeChange
     DOTween.dll:
     - DG.Tweening.Core.DOTweenSettings
@@ -26,7 +35,6 @@ ScriptsOnlyBuild:
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
-    - TMPro.TextMeshPro
     - TMPro.TextMeshProUGUI
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -83,57 +91,57 @@ ScriptsOnlyBuild:
     - Class: 109
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9270}
+      Script: {instanceID: 9276}
     - Class: 114
-      Script: {instanceID: 9322}
+      Script: {instanceID: 9332}
     - Class: 114
-      Script: {instanceID: 9324}
+      Script: {instanceID: 9334}
     - Class: 114
-      Script: {instanceID: 9372}
+      Script: {instanceID: 9388}
     - Class: 114
-      Script: {instanceID: 9382}
+      Script: {instanceID: 9398}
     - Class: 114
-      Script: {instanceID: 9392}
+      Script: {instanceID: 9410}
     - Class: 114
-      Script: {instanceID: 9420}
+      Script: {instanceID: 9438}
     - Class: 114
-      Script: {instanceID: 9422}
+      Script: {instanceID: 9440}
     - Class: 114
-      Script: {instanceID: 9428}
+      Script: {instanceID: 9446}
     - Class: 114
-      Script: {instanceID: 9434}
+      Script: {instanceID: 9452}
     - Class: 114
-      Script: {instanceID: 9442}
+      Script: {instanceID: 9460}
     - Class: 114
-      Script: {instanceID: 9476}
+      Script: {instanceID: 9494}
     - Class: 114
-      Script: {instanceID: 9478}
+      Script: {instanceID: 9496}
     - Class: 114
-      Script: {instanceID: 9480}
+      Script: {instanceID: 9498}
     - Class: 114
-      Script: {instanceID: 9536}
+      Script: {instanceID: 9556}
     - Class: 114
-      Script: {instanceID: 9710}
+      Script: {instanceID: 9734}
     - Class: 114
-      Script: {instanceID: 9894}
+      Script: {instanceID: 9926}
     - Class: 114
-      Script: {instanceID: 10138}
+      Script: {instanceID: 10188}
     - Class: 114
-      Script: {instanceID: 10150}
+      Script: {instanceID: 10202}
     - Class: 114
-      Script: {instanceID: 10166}
+      Script: {instanceID: 10222}
     - Class: 114
-      Script: {instanceID: 10220}
+      Script: {instanceID: 10280}
     - Class: 114
-      Script: {instanceID: 10332}
+      Script: {instanceID: 10396}
     - Class: 114
-      Script: {instanceID: 10346}
+      Script: {instanceID: 10410}
     - Class: 114
-      Script: {instanceID: 10440}
+      Script: {instanceID: 10506}
     - Class: 114
-      Script: {instanceID: 10500}
+      Script: {instanceID: 10570}
     - Class: 114
-      Script: {instanceID: 10768}
+      Script: {instanceID: 10850}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -194,60 +202,82 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9420}
+      Script: {instanceID: 9272}
     - Class: 114
-      Script: {instanceID: 9422}
+      Script: {instanceID: 9288}
     - Class: 114
-      Script: {instanceID: 9428}
+      Script: {instanceID: 9352}
     - Class: 114
-      Script: {instanceID: 9434}
+      Script: {instanceID: 9366}
     - Class: 114
-      Script: {instanceID: 9442}
+      Script: {instanceID: 9382}
     - Class: 114
-      Script: {instanceID: 9478}
+      Script: {instanceID: 9438}
     - Class: 114
-      Script: {instanceID: 9480}
+      Script: {instanceID: 9440}
     - Class: 114
-      Script: {instanceID: 9944}
+      Script: {instanceID: 9446}
     - Class: 114
-      Script: {instanceID: 10166}
+      Script: {instanceID: 9452}
     - Class: 114
-      Script: {instanceID: 10332}
+      Script: {instanceID: 9460}
     - Class: 114
-      Script: {instanceID: 10500}
+      Script: {instanceID: 9496}
     - Class: 114
-      Script: {instanceID: 10852}
+      Script: {instanceID: 9498}
     - Class: 114
-      Script: {instanceID: 13024}
+      Script: {instanceID: 9678}
     - Class: 114
-      Script: {instanceID: 13026}
+      Script: {instanceID: 9810}
     - Class: 114
-      Script: {instanceID: 13028}
+      Script: {instanceID: 9848}
     - Class: 114
-      Script: {instanceID: 13030}
+      Script: {instanceID: 9914}
     - Class: 114
-      Script: {instanceID: 13036}
+      Script: {instanceID: 9980}
     - Class: 114
-      Script: {instanceID: 13038}
+      Script: {instanceID: 10130}
     - Class: 114
-      Script: {instanceID: 13050}
+      Script: {instanceID: 10200}
     - Class: 114
-      Script: {instanceID: 13052}
+      Script: {instanceID: 10206}
     - Class: 114
-      Script: {instanceID: 13060}
+      Script: {instanceID: 10222}
     - Class: 114
-      Script: {instanceID: 13062}
+      Script: {instanceID: 10266}
     - Class: 114
-      Script: {instanceID: 34746}
+      Script: {instanceID: 10348}
     - Class: 114
-      Script: {instanceID: 40808}
+      Script: {instanceID: 10396}
+    - Class: 114
+      Script: {instanceID: 10524}
+    - Class: 114
+      Script: {instanceID: 10532}
+    - Class: 114
+      Script: {instanceID: 10570}
+    - Class: 114
+      Script: {instanceID: 10574}
+    - Class: 114
+      Script: {instanceID: 10592}
+    - Class: 114
+      Script: {instanceID: 10694}
+    - Class: 114
+      Script: {instanceID: 10720}
+    - Class: 114
+      Script: {instanceID: 19542}
     - Class: 115
       Script: {instanceID: 0}
+    - Class: 120
+      Script: {instanceID: 0}
     - Class: 128
+      Script: {instanceID: 0}
+    - Class: 136
       Script: {instanceID: 0}
     - Class: 146
       Script: {instanceID: 0}
     - Class: 157
+      Script: {instanceID: 0}
+    - Class: 195
       Script: {instanceID: 0}
     - Class: 198
       Script: {instanceID: 0}
@@ -261,6 +291,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
+    - Class: 238
+      Script: {instanceID: 0}
     - Class: 258
       Script: {instanceID: 0}
   scriptHashData:
@@ -270,6 +302,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SelectionCaret
+  - hash:
+      serializedVersion: 2
+      Hash: 10186dca467d1b34e06fabcafc3e1b8f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ShootableBox
   - hash:
       serializedVersion: 2
       Hash: 87ff43d2baf3385cba327d8f803a4ebb
@@ -282,6 +320,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_Dropdown
+  - hash:
+      serializedVersion: 2
+      Hash: d8c8ca28454c2b82a37edfb3164b5ff5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: StopCar
+  - hash:
+      serializedVersion: 2
+      Hash: 83e769eee07fc231384c812eedbb8224
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerManager
   - hash:
       serializedVersion: 2
       Hash: 5bd9a19c7b5f76c563418e28f48a561b
@@ -302,16 +352,34 @@ ScriptsOnlyBuild:
     className: ArmModel
   - hash:
       serializedVersion: 2
+      Hash: f00ca901b734f71f99db8f25241154c4
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: UnityStandardAssets.Vehicles.Car
+    className: Suspension
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: GroupTrack
   - hash:
       serializedVersion: 2
+      Hash: 78d229a32405f4104025ae9511906999
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: UnityStandardAssets.Vehicles.Car
+    className: BrakeLight
+  - hash:
+      serializedVersion: 2
       Hash: a5781dc71a671b1ad2b38de19f24b71f
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: ActivationTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 39a1af780851540205de944aa74817a6
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: UnityStandardAssets.Vehicles.Car
+    className: SkidTrail
   - hash:
       serializedVersion: 2
       Hash: eafb77726b67b7571818a7210a3ce11e
@@ -524,6 +592,12 @@ ScriptsOnlyBuild:
     className: TMP_InputField
   - hash:
       serializedVersion: 2
+      Hash: 352455aaadb8c98ff36ead557753abfa
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: UnityStandardAssets.CrossPlatformInput
+    className: TiltInput
+  - hash:
+      serializedVersion: 2
       Hash: ad9173d3a69d99153f38ed4b62226129
     assemblyName: com.unity.multiplayer-hlapi.Runtime.dll
     namespaceName: UnityEngine.Networking
@@ -729,6 +803,18 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Trigger
+  - hash:
+      serializedVersion: 2
+      Hash: 8d4458b476a9a4dd8df843a849fcfffa
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: UnityEngine.AI
+    className: NavMeshSurface
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalAsset
@@ -770,6 +856,18 @@ ScriptsOnlyBuild:
     className: AnimationPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: 42396cadf10b77f3a077293197e93634
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: UnityStandardAssets.Vehicles.Car
+    className: WheelEffects
+  - hash:
+      serializedVersion: 2
+      Hash: 16a5037489b3d30203e2ab7358b43124
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: UnityStandardAssets.Vehicles.Car
+    className: CarUserControl
+  - hash:
+      serializedVersion: 2
       Hash: d251bf88db6c95a6b1aa0b69298da9ef
     assemblyName: UnityEngine.SpatialTracking.dll
     namespaceName: UnityEngine.SpatialTracking
@@ -794,6 +892,12 @@ ScriptsOnlyBuild:
     className: ControlPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: f654ef4e64297b22defcce7d19e72660
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ReturnToMenu
+  - hash:
+      serializedVersion: 2
       Hash: b8a5e8091ab0b8861d2add371082c5e0
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -804,6 +908,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: ControlTrack
+  - hash:
+      serializedVersion: 2
+      Hash: a8b6c919b2049fcc280823488144371f
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: UnityStandardAssets.CrossPlatformInput
+    className: Joystick
   - hash:
       serializedVersion: 2
       Hash: ff67116b5b1df7bbcec87e722c4b248a
@@ -830,10 +940,28 @@ ScriptsOnlyBuild:
     className: NetworkTransformVisualizer
   - hash:
       serializedVersion: 2
+      Hash: 4bd1cc3c85989d2213a9a8fd9d09e63f
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: UnityStandardAssets.CrossPlatformInput
+    className: InputAxisScrollbar
+  - hash:
+      serializedVersion: 2
+      Hash: fdd7177da17032ba94d98037cc97bb49
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: UnityStandardAssets.CrossPlatformInput
+    className: AxisTouchButton
+  - hash:
+      serializedVersion: 2
       Hash: b3ab2106268377ffe25dd18ac23dca28
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_Asset
+  - hash:
+      serializedVersion: 2
+      Hash: c88c4199b288356ec3eb2f0d85abc619
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: UnityStandardAssets.CrossPlatformInput
+    className: ButtonHandler
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -842,10 +970,22 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
+      Hash: 2db321887810fe317ff2e8b0aead116b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RespawnCollider
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: com.unity.multiplayer-hlapi.Runtime.dll
     namespaceName: UnityEngine.Networking
     className: NetworkCallbacks
+  - hash:
+      serializedVersion: 2
+      Hash: 2b19be13f00df62e6d4d4f5539bcad51
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: UnityEngine.AI
+    className: NavMeshModifier
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -866,6 +1006,18 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAnimator
   - hash:
       serializedVersion: 2
+      Hash: 7299a528424874bcf6b5736b5305ac37
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: UnityEngine.AI
+    className: NavMeshModifierVolume
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: UnityStandardAssets.CrossPlatformInput
+    className: MobileControlRig
+  - hash:
+      serializedVersion: 2
       Hash: 704dcd31abc789439bc3f3cd10b58c2b
     assemblyName: DOTween.dll
     namespaceName: DG.Tweening.Core
@@ -878,13 +1030,31 @@ ScriptsOnlyBuild:
     className: DOTweenSettings
   - hash:
       serializedVersion: 2
+      Hash: e08b7fd025e5743e5563e22fdd827075
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: UnityStandardAssets.Vehicles.Car
+    className: CarController
+  - hash:
+      serializedVersion: 2
+      Hash: 859da63295210b3f93e1dc8bf35a2f32
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: 
+    className: MoveCar
+  - hash:
+      serializedVersion: 2
+      Hash: 0334c4a0effc471453cf665c58f76aff
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: UnityStandardAssets.Vehicles.Car
+    className: CarAIControl
+  - hash:
+      serializedVersion: 2
       Hash: 31a4ac9549d1314682d3a63d4b86159e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Dot_Truck_Controller
   - hash:
       serializedVersion: 2
-      Hash: 84be11a1983b1700df5d585a3b05bd65
+      Hash: 1a8bf04596c93d77dfd87b18c2e94a4d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TestCollision
@@ -896,10 +1066,28 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
+      Hash: 21ee95b4add1eb6d3d25a1efaa2d13d9
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: UnityStandardAssets.Vehicles.Car
+    className: CarSelfRighting
+  - hash:
+      serializedVersion: 2
+      Hash: 325daa67c572605fedd7ecaf2af6cf79
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnemyController
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: VolumeChange
+  - hash:
+      serializedVersion: 2
+      Hash: b4b34576c9f6dde8311c6256c9f03b8f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RaycastShoot
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -912,6 +1100,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MoveButton
+  - hash:
+      serializedVersion: 2
+      Hash: f8883b0ba1555b2c11f923348287f5ad
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RotateCam
   - hash:
       serializedVersion: 2
       Hash: 3f8d7b92a6be3c715e55d5cfa7cc8384
@@ -992,6 +1186,18 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
+      Hash: daa6a65fb0f785335ff43e9998133a34
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: UnityStandardAssets.Vehicles.Car
+    className: Mudguard
+  - hash:
+      serializedVersion: 2
+      Hash: 21be83a0715e0c9d9c64c5ce0ff32e24
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Tip2Collider
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: com.unity.multiplayer-hlapi.Runtime.dll
     namespaceName: UnityEngine.Networking
@@ -1004,6 +1210,18 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
+      Hash: a909505c7e9870f1ee552a40f203397a
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: UnityStandardAssets.Vehicles.Car
+    className: CarAudio
+  - hash:
+      serializedVersion: 2
+      Hash: 6ceb1f9fedd52bb1d060fcbd89901c88
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GunShooting
+  - hash:
+      serializedVersion: 2
       Hash: 516824a435828eadd660ef2f1658a48e
     assemblyName: Unity.Analytics.DataPrivacy.dll
     namespaceName: UnityEngine.Analytics
@@ -1014,6 +1232,24 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: AudioTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 27ae00246be2c0b597d178553d55444f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Tip1Collider
+  - hash:
+      serializedVersion: 2
+      Hash: caa98e293a38fe64a8e29659f99b49ac
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SwapCamera
+  - hash:
+      serializedVersion: 2
+      Hash: 219ec6059796d8951d2adcd8505d0dc2
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: UnityStandardAssets.CrossPlatformInput
+    className: TouchPad
   - hash:
       serializedVersion: 2
       Hash: 1dcb82730d983b77cec736c6ef19f814
@@ -1034,6 +1270,12 @@ ScriptsOnlyBuild:
     className: MarkerTrack
   - hash:
       serializedVersion: 2
+      Hash: c8c672fee8a258266e51b55a210b8083
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: UnityEngine.AI
+    className: NavMeshLink
+  - hash:
+      serializedVersion: 2
       Hash: d791aa6007fa3640be1164ea75bb087d
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -1046,6 +1288,12 @@ ScriptsOnlyBuild:
     className: NetworkAnimator
   - hash:
       serializedVersion: 2
+      Hash: 5d28819e43c62c825b7160072082b620
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RaycastLine
+  - hash:
+      serializedVersion: 2
       Hash: 5372ed2ce39229b1ac910757999a8be2
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -1056,6 +1304,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_ColorGradient
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerHp
+  - hash:
+      serializedVersion: 2
+      Hash: e9e74107857b05820257667ea7901bd4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MovingCube
   - hash:
       serializedVersion: 2
       Hash: e0ee4b3d4e27318934cc940a969d3d96
@@ -1088,132 +1348,12 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: d8c8ca28454c2b82a37edfb3164b5ff5
+      Hash: 27ae00246be2c0b597d178553d55444f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: StopCar
-  - hash:
-      serializedVersion: 2
-      Hash: f00ca901b734f71f99db8f25241154c4
-    assemblyName: Assembly-CSharp-firstpass.dll
-    namespaceName: UnityStandardAssets.Vehicles.Car
-    className: Suspension
-  - hash:
-      serializedVersion: 2
-      Hash: 78d229a32405f4104025ae9511906999
-    assemblyName: Assembly-CSharp-firstpass.dll
-    namespaceName: UnityStandardAssets.Vehicles.Car
-    className: BrakeLight
-  - hash:
-      serializedVersion: 2
-      Hash: 39a1af780851540205de944aa74817a6
-    assemblyName: Assembly-CSharp-firstpass.dll
-    namespaceName: UnityStandardAssets.Vehicles.Car
-    className: SkidTrail
-  - hash:
-      serializedVersion: 2
-      Hash: 352455aaadb8c98ff36ead557753abfa
-    assemblyName: Assembly-CSharp-firstpass.dll
-    namespaceName: UnityStandardAssets.CrossPlatformInput
-    className: TiltInput
-  - hash:
-      serializedVersion: 2
-      Hash: 42396cadf10b77f3a077293197e93634
-    assemblyName: Assembly-CSharp-firstpass.dll
-    namespaceName: UnityStandardAssets.Vehicles.Car
-    className: WheelEffects
-  - hash:
-      serializedVersion: 2
-      Hash: 16a5037489b3d30203e2ab7358b43124
-    assemblyName: Assembly-CSharp-firstpass.dll
-    namespaceName: UnityStandardAssets.Vehicles.Car
-    className: CarUserControl
-  - hash:
-      serializedVersion: 2
-      Hash: a8b6c919b2049fcc280823488144371f
-    assemblyName: Assembly-CSharp-firstpass.dll
-    namespaceName: UnityStandardAssets.CrossPlatformInput
-    className: Joystick
-  - hash:
-      serializedVersion: 2
-      Hash: 4bd1cc3c85989d2213a9a8fd9d09e63f
-    assemblyName: Assembly-CSharp-firstpass.dll
-    namespaceName: UnityStandardAssets.CrossPlatformInput
-    className: InputAxisScrollbar
-  - hash:
-      serializedVersion: 2
-      Hash: fdd7177da17032ba94d98037cc97bb49
-    assemblyName: Assembly-CSharp-firstpass.dll
-    namespaceName: UnityStandardAssets.CrossPlatformInput
-    className: AxisTouchButton
-  - hash:
-      serializedVersion: 2
-      Hash: c88c4199b288356ec3eb2f0d85abc619
-    assemblyName: Assembly-CSharp-firstpass.dll
-    namespaceName: UnityStandardAssets.CrossPlatformInput
-    className: ButtonHandler
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp-firstpass.dll
-    namespaceName: UnityStandardAssets.CrossPlatformInput
-    className: MobileControlRig
-  - hash:
-      serializedVersion: 2
-      Hash: e08b7fd025e5743e5563e22fdd827075
-    assemblyName: Assembly-CSharp-firstpass.dll
-    namespaceName: UnityStandardAssets.Vehicles.Car
-    className: CarController
-  - hash:
-      serializedVersion: 2
-      Hash: 859da63295210b3f93e1dc8bf35a2f32
-    assemblyName: Assembly-CSharp-firstpass.dll
-    namespaceName: 
-    className: MoveCar
-  - hash:
-      serializedVersion: 2
-      Hash: 0334c4a0effc471453cf665c58f76aff
-    assemblyName: Assembly-CSharp-firstpass.dll
-    namespaceName: UnityStandardAssets.Vehicles.Car
-    className: CarAIControl
-  - hash:
-      serializedVersion: 2
-      Hash: 21ee95b4add1eb6d3d25a1efaa2d13d9
-    assemblyName: Assembly-CSharp-firstpass.dll
-    namespaceName: UnityStandardAssets.Vehicles.Car
-    className: CarSelfRighting
-  - hash:
-      serializedVersion: 2
-      Hash: daa6a65fb0f785335ff43e9998133a34
-    assemblyName: Assembly-CSharp-firstpass.dll
-    namespaceName: UnityStandardAssets.Vehicles.Car
-    className: Mudguard
-  - hash:
-      serializedVersion: 2
-      Hash: a909505c7e9870f1ee552a40f203397a
-    assemblyName: Assembly-CSharp-firstpass.dll
-    namespaceName: UnityStandardAssets.Vehicles.Car
-    className: CarAudio
-  - hash:
-      serializedVersion: 2
-      Hash: 219ec6059796d8951d2adcd8505d0dc2
-    assemblyName: Assembly-CSharp-firstpass.dll
-    namespaceName: UnityStandardAssets.CrossPlatformInput
-    className: TouchPad
-  - hash:
-      serializedVersion: 2
-      Hash: 2db321887810fe317ff2e8b0aead116b
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: RespawnCollider
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ReturnToMenu
+    className: Tip3Collider
   platform: 13
   scenePathNames:
   - Assets/Scenes/IcenSpice Menu 2.0.unity
   - Assets/Scenes/TestSceneForMenu.unity
-  playerPath: E:/unity practice/IcenSpice Menu 2.0/menubuild2.apk
+  playerPath: E:/unity practice/IcenSpice Menu 2.0/menubuild3.apk

@@ -7,11 +7,12 @@ public class TestCollision : MonoBehaviour
 {
     public GameObject other;
     public GameObject endPanel;
+    public GameObject settingsPanel;
     static public int[] complete = new int[] { 0, 0 };
     Player data;
     private void Start()
     {
-        endPanel.SetActive(false);
+        
         data = new Player();
         data.LoadPlayer();
         print(complete[0]);
