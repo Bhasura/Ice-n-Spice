@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/IcenSpice Menu 2.0.unity
+    guid: cb80769633915774e9284cc5922c3a06
+  - enabled: 1
+    path: Assets/Scenes/TestSceneForMenu.unity
+    guid: 57686287ab650d742a223a168ae5149b
+  - enabled: 1
+    path: Assets/Scenes/Stage2.unity
+    guid: 3d343d7b47a942f49b6261e7081476ce
+  - enabled: 1
+    path: Assets/Scenesl_Net/Network_Scenes/Co-op_Lobby.unity
+    guid: 0f7e0ac9aa7dfcd43a803f692e13adb2
+  - enabled: 1
+    path: Assets/Scenesl_Net/Network_Scenes/Co-op_Level.unity
+    guid: 1799e1349544ac14dae3b2edf096005a
+  m_configObjects: {}
