@@ -6,28 +6,32 @@ using UnityEngine.EventSystems;
 public class MoveCar : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
 {
     public bool isPointerDown = false;
-    public float carSpeed = 0;
+    public static float carSpeed = 0;
 
 
 
 
     public virtual void OnPointerUp(PointerEventData p)
     {
-        
+
         isPointerDown = false;
+        carSpeed = 0;
 
     }
 
     public virtual void OnPointerDown(PointerEventData p)
     {
-        
+
         isPointerDown = true;
+        carSpeed = 0.1f;
+        print("Button CLicked");
 
 
 
     }
 
-    public float accelerateCar()
+
+    /*public float accelerateCar()
     {
         if (isPointerDown == true)
         {
@@ -40,5 +44,5 @@ public class MoveCar : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
 
         }
         return carSpeed;
-    }
+    }*/
 }

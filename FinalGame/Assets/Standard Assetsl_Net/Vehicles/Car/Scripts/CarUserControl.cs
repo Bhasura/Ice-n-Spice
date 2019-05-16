@@ -27,8 +27,11 @@ namespace UnityStandardAssets.Vehicles.Car
            // m_Car.Move(h, v, v, handbrake);
 
             h = Input.acceleration.x * 2;
-            v = mc.accelerateCar();
+            // v = mc.accelerateCar();
+            v = MoveCar.carSpeed;
             m_Car.Move(h, v, v, 0f);
+            print("Accelerate button has been pressed.");
+
 
         }
     }
