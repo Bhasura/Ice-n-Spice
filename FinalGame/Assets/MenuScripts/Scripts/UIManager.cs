@@ -10,7 +10,7 @@ public class UIManager : MonoBehaviour
     public RectTransform mainMenu, stage1, stage2, loadingScreen, shopPanel;
     public GameObject optionsPanel;
     public GameObject S2Locked;
-    Player p = new Player();
+    public Player p;
    
     
     public Text tutorialCompletion;
@@ -20,24 +20,38 @@ public class UIManager : MonoBehaviour
     {
         mainMenu.DOAnchorPos(Vector2.zero, 0.25f);
         stage2Completion();
-        if (TestCollision.complete[0] == 100)
-        {
-            S2Locked.SetActive(false);
-        }
+        p.LoadPlayer();
 
     }
 
     // Update is called once per frame
     //in main menu
+    public void resetGame()
+    {
+        p = new Player();
+        p.stageCompletion[0] = 0;
+        p.stageCompletion[1] = 0;
+
+        p.SavePlayerData();
+        
+    }
     public void stage1Completion()
     {
-
-        tutorialCompletion.text = TestCollision.complete[0].ToString();
-        
+        print(p.stageCompletion[0]);
+        tutorialCompletion.text = p.stageCompletion[0].ToString();
+        if (p.stageCompletion[0] == 100)
+        {
+            print("s2 unlocked");
+            S2Locked.SetActive(false);
+        }
+        else
+        {
+            S2Locked.SetActive(true);
+        }
     }
     public void stage2Completion()
     {
-        S2Completion.text = TestCollision.complete[1].ToString();
+        S2Completion.text = p.stageCompletion[1].ToString();
     }
     public void goToStage1()
     {

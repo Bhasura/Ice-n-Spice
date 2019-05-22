@@ -6,13 +6,9 @@ using UnityEngine;
 public class PlayerData 
 {
     public int []stagesComplete;
-    public int gold;
-    public int playerPrefab;
 
     public PlayerData(Player player)
     {
-        stagesComplete = player.stageCompletion;
-        gold = player.gold;
-        playerPrefab = player.playerPrefab;
+       stagesComplete = player.stageCompletion;
     }
 }

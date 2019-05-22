@@ -4,19 +4,17 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public int gold = 100;
     public int []stageCompletion;
-    public int playerPrefab = 1;
 
     public Player ()
     {
         stageCompletion = TestCollision.complete;
     }
-
+    
     public void SavePlayerData()
     {
         //saves this player data
-        print(gold);
+        
         SaveData.SavePlayer(this);
         SaveData.LoadPlayer();
     }
@@ -26,8 +24,6 @@ public class Player : MonoBehaviour
     {
         PlayerData data = SaveData.LoadPlayer();
 
-        gold = data.gold;
         stageCompletion = data.stagesComplete;
-        playerPrefab = data.playerPrefab;
     }
 }

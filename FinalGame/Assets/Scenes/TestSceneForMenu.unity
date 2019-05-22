@@ -1314,40 +1314,60 @@ PrefabInstance:
       propertyPath: m_Name
       value: Car
       objectReference: {fileID: 0}
+    - target: {fileID: 1581119524587308292, guid: 376d8adfcc9ecfc489a227719764688a,
+        type: 3}
+      propertyPath: shootButton
+      value: 
+      objectReference: {fileID: 603838808}
+    - target: {fileID: 1581119524587308292, guid: 376d8adfcc9ecfc489a227719764688a,
+        type: 3}
+      propertyPath: accelButton
+      value: 
+      objectReference: {fileID: 577749323}
+    - target: {fileID: 1581119524587308292, guid: 376d8adfcc9ecfc489a227719764688a,
+        type: 3}
+      propertyPath: shooterButton
+      value: 
+      objectReference: {fileID: 1657979218}
+    - target: {fileID: 1581119524587308292, guid: 376d8adfcc9ecfc489a227719764688a,
+        type: 3}
+      propertyPath: driverButton
+      value: 
+      objectReference: {fileID: 589609768}
     - target: {fileID: 1581119524587018611, guid: 376d8adfcc9ecfc489a227719764688a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.3707883
+      value: -1.17
       objectReference: {fileID: 0}
     - target: {fileID: 1581119524587018611, guid: 376d8adfcc9ecfc489a227719764688a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.764
+      value: 1.37
       objectReference: {fileID: 0}
     - target: {fileID: 1581119524587018611, guid: 376d8adfcc9ecfc489a227719764688a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 22.929958
+      value: -17.71
       objectReference: {fileID: 0}
     - target: {fileID: 1581119524587018611, guid: 376d8adfcc9ecfc489a227719764688a,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0.0060486603
       objectReference: {fileID: 0}
     - target: {fileID: 1581119524587018611, guid: 376d8adfcc9ecfc489a227719764688a,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 1
+      value: -0.9937181
       objectReference: {fileID: 0}
     - target: {fileID: 1581119524587018611, guid: 376d8adfcc9ecfc489a227719764688a,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: 0.067486905
       objectReference: {fileID: 0}
     - target: {fileID: 1581119524587018611, guid: 376d8adfcc9ecfc489a227719764688a,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
+      value: -0.08906857
       objectReference: {fileID: 0}
     - target: {fileID: 1581119524587018611, guid: 376d8adfcc9ecfc489a227719764688a,
         type: 3}
@@ -1374,26 +1394,6 @@ PrefabInstance:
       propertyPath: mc
       value: 
       objectReference: {fileID: 577749325}
-    - target: {fileID: 1581119524587308292, guid: 376d8adfcc9ecfc489a227719764688a,
-        type: 3}
-      propertyPath: shootButton
-      value: 
-      objectReference: {fileID: 603838808}
-    - target: {fileID: 1581119524587308292, guid: 376d8adfcc9ecfc489a227719764688a,
-        type: 3}
-      propertyPath: accelButton
-      value: 
-      objectReference: {fileID: 577749323}
-    - target: {fileID: 1581119524587308292, guid: 376d8adfcc9ecfc489a227719764688a,
-        type: 3}
-      propertyPath: shooterButton
-      value: 
-      objectReference: {fileID: 1657979218}
-    - target: {fileID: 1581119524587308292, guid: 376d8adfcc9ecfc489a227719764688a,
-        type: 3}
-      propertyPath: driverButton
-      value: 
-      objectReference: {fileID: 589609768}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 376d8adfcc9ecfc489a227719764688a, type: 3}
 --- !u!1001 &6191563218207650905
@@ -1611,6 +1611,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpawnPoint
       objectReference: {fileID: 0}
+    - target: {fileID: 7695414248545001993, guid: c5b26544197e88f4192c85e17cac01c6,
+        type: 3}
+      propertyPath: endPanel
+      value: 
+      objectReference: {fileID: 1924847701}
+    - target: {fileID: 7695414248545001993, guid: c5b26544197e88f4192c85e17cac01c6,
+        type: 3}
+      propertyPath: settingsPanel
+      value: 
+      objectReference: {fileID: 1603886663}
+    - target: {fileID: 7695414248545001993, guid: c5b26544197e88f4192c85e17cac01c6,
+        type: 3}
+      propertyPath: car
+      value: 
+      objectReference: {fileID: 4742877634579082967}
+    - target: {fileID: 7695414248545001993, guid: c5b26544197e88f4192c85e17cac01c6,
+        type: 3}
+      propertyPath: tipPanel
+      value: 
+      objectReference: {fileID: 772975560}
+    - target: {fileID: 7695414248545001993, guid: c5b26544197e88f4192c85e17cac01c6,
+        type: 3}
+      propertyPath: shootButton
+      value: 
+      objectReference: {fileID: 603838808}
+    - target: {fileID: 7695414248545001993, guid: c5b26544197e88f4192c85e17cac01c6,
+        type: 3}
+      propertyPath: driverButton
+      value: 
+      objectReference: {fileID: 589609768}
     - target: {fileID: 7695414248545001998, guid: c5b26544197e88f4192c85e17cac01c6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1666,36 +1696,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7695414248545001993, guid: c5b26544197e88f4192c85e17cac01c6,
-        type: 3}
-      propertyPath: endPanel
-      value: 
-      objectReference: {fileID: 1924847701}
-    - target: {fileID: 7695414248545001993, guid: c5b26544197e88f4192c85e17cac01c6,
-        type: 3}
-      propertyPath: settingsPanel
-      value: 
-      objectReference: {fileID: 1603886663}
-    - target: {fileID: 7695414248545001993, guid: c5b26544197e88f4192c85e17cac01c6,
-        type: 3}
-      propertyPath: car
-      value: 
-      objectReference: {fileID: 4742877634579082967}
-    - target: {fileID: 7695414248545001993, guid: c5b26544197e88f4192c85e17cac01c6,
-        type: 3}
-      propertyPath: tipPanel
-      value: 
-      objectReference: {fileID: 772975560}
-    - target: {fileID: 7695414248545001993, guid: c5b26544197e88f4192c85e17cac01c6,
-        type: 3}
-      propertyPath: shootButton
-      value: 
-      objectReference: {fileID: 603838808}
-    - target: {fileID: 7695414248545001993, guid: c5b26544197e88f4192c85e17cac01c6,
-        type: 3}
-      propertyPath: driverButton
-      value: 
-      objectReference: {fileID: 589609768}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5b26544197e88f4192c85e17cac01c6, type: 3}
 --- !u!1001 &7753335353828964786

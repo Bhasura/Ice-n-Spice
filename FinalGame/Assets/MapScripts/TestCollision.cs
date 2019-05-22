@@ -14,7 +14,7 @@ public class TestCollision : MonoBehaviour
     {
         
         data = new Player();
-        data.LoadPlayer();
+       // data.LoadPlayer();
         print(complete[0]);
         
         
@@ -26,11 +26,11 @@ public class TestCollision : MonoBehaviour
         {
             endPanel.SetActive(true);
             complete[0] = 100;
-            
+           
             print(complete[0]);
             data.SavePlayerData();
 
-            print(complete[0]);
+           
         }
         else if (SceneManager.GetActiveScene().name == "Stage2")
         {
