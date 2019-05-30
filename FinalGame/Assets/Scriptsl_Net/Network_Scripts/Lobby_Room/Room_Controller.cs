@@ -17,7 +17,9 @@ public class Room_Controller : MonoBehaviourPunCallbacks
     public GameObject decelerateButton;
     public GameObject endPanel;
     public GameObject startCube;
-    
+    public static GameObject child1;
+
+
     public Text info;
 
     // Start is called before the first frame update
@@ -34,6 +36,9 @@ public class Room_Controller : MonoBehaviourPunCallbacks
     // Update is called once per frame
     void Update()
     {
+        child1 = player1.transform.Find("Turret").gameObject;
+        print(child1.transform.position);
+        print(child1.transform.rotation);
         info.text = "Current Room name: " + PhotonNetwork.CurrentRoom.Name + " Number of players in the room: " + PhotonNetwork.CurrentRoom.PlayerCount;
         if(PhotonNetwork.CurrentRoom.PlayerCount==2)
         {
@@ -66,15 +71,17 @@ public class Room_Controller : MonoBehaviourPunCallbacks
         {
             levelCamera.SetActive(false);
             player2 = PhotonNetwork.Instantiate(player2.name, spawnpoint2.position, spawnpoint2.rotation, 0);
+           
            // accelerateButton.SetActive(true);
             print("I am the second player.....");
-
+           
+            
         }
         else
         {
             levelCamera.SetActive(false);
             player1 = PhotonNetwork.Instantiate(player1.name, spawnpoint1.position, spawnpoint1.rotation, 0);
-           // accelerateButton.SetActive(false);
+            // accelerateButton.SetActive(false);
             
             print("I am the first player...");
 

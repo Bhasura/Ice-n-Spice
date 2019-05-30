@@ -135,7 +135,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPointerDown: 0
-  carSpeed: 0
 --- !u!1 &5447461794093180001
 GameObject:
   m_ObjectHideFlags: 0

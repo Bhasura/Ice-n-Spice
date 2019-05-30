@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class TestCollision : MonoBehaviour
 {
-    public GameObject other;
+    public GameObject truck;
     public GameObject endPanel;
     public GameObject settingsPanel;
     static public int[] complete = new int[] { 0, 0 };
@@ -22,26 +22,29 @@ public class TestCollision : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         //For stage 1 or tutorial stage
-        if(SceneManager.GetActiveScene().name == "TestSceneForMenu")
-        {
-            endPanel.SetActive(true);
-            complete[0] = 100;
-           
-            print(complete[0]);
-            data.SavePlayerData();
 
-           
-        }
-        else if (SceneManager.GetActiveScene().name == "Stage2")
-        {
-            endPanel.SetActive(true);
-            complete[1] = 100;
+            if (SceneManager.GetActiveScene().name == "TestSceneForMenu" && other.tag == "Player")
+            {
 
-            print(complete[1]);
-            data.SavePlayerData();
+                endPanel.SetActive(true);
+                complete[0] = 100;
 
-            print(complete[1]);
-        }
+                print(complete[0]);
+                data.SavePlayerData();
+
+
+            }
+            else if (SceneManager.GetActiveScene().name == "Stage2" && other.tag == "Player")
+            {
+                endPanel.SetActive(true);
+                complete[1] = 100;
+
+                print(complete[1]);
+                data.SavePlayerData();
+
+                print(complete[1]);
+            }
+        
     }
     
 
