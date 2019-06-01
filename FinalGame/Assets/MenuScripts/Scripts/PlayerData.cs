@@ -6,9 +6,14 @@ using UnityEngine;
 public class PlayerData 
 {
     public int []stagesComplete;
+    public int[] inventory;
+    public int gold;
 
     public PlayerData(Player player)
     {
-       stagesComplete = player.stageCompletion;
+        stagesComplete = player.stageCompletion;
+        inventory = player.inventory;
+        gold = player.gold;
+        
     }
 }

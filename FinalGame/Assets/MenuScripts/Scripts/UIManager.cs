@@ -10,18 +10,36 @@ public class UIManager : MonoBehaviour
     public RectTransform mainMenu, stage1, stage2, loadingScreen, shopPanel;
     public GameObject optionsPanel;
     public GameObject S2Locked;
+    public GameObject equipWhiteButton;
     public Player p;
    
-    
     public Text tutorialCompletion;
     public Text S2Completion;
+    
     // Start is called before the first frame update
     void Start()
     {
         mainMenu.DOAnchorPos(Vector2.zero, 0.25f);
         stage2Completion();
-        p.LoadPlayer();
+        equipWhiteButton.SetActive(false);
 
+        //used when you finish a stage
+        if(GlobalControl.Instance.needUpdate == true)
+        {
+            p.loadFromGlobal();
+            GlobalControl.Instance.needUpdate = false;
+        }
+        
+        p.LoadPlayer();
+        p.loadToGlobal();
+        print(GlobalControl.Instance.shopInventory[3]);
+        //if player has trucks in inventory saved show equip button
+       if(GlobalControl.Instance.shopInventory[3] == 1)
+        {
+            equipWhiteButton.SetActive(true);
+        }
+        
+       
     }
 
     // Update is called once per frame
@@ -78,6 +96,35 @@ public class UIManager : MonoBehaviour
         shopPanel.DOAnchorPos(new Vector2(-1080, -540), 0.25f);
         mainMenu.DOAnchorPos(new Vector2(0, 0), 0.25f);
     }
+    
+    public void equipDef()
+    {
+        GlobalControl.Instance.shopInventory[0] = 1;
+        GlobalControl.Instance.shopInventory[1] = 0;
+        p.loadFromGlobal();
+        p.loadToGlobal();
+    }
+    public void buyWhiteTruck()
+    {
+        if(GlobalControl.Instance.gold >= 10000)
+        {
+            GlobalControl.Instance.gold = GlobalControl.Instance.gold - 10000;
+            GlobalControl.Instance.shopInventory[3] = 1;
+            p.loadFromGlobal();
+            p.loadToGlobal();
+            equipWhiteButton.SetActive(true);
+        }
+        
+    }
+    public void equipWhite()
+    {
+        GlobalControl.Instance.shopInventory[0] = 0;
+        GlobalControl.Instance.shopInventory[1] = 1;
+        p.loadFromGlobal();
+        p.loadToGlobal();
+        
+        
+    }
     //in stage 1
     public void goToStage2()
     {
@@ -99,11 +146,12 @@ public class UIManager : MonoBehaviour
 
     //in stage 2
     public void s2LockedButton()
-    {
+    {/*
         if(TestCollision.complete[0] == 100)
         {
             S2Locked.SetActive(false);
         }
+        */
     }
     public void s2GoToStage1()
     {
