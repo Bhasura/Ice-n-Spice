@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -832,6 +832,8 @@ MonoBehaviour:
   roomprefab: {fileID: 1588480474}
   roomprefabs: []
   refreshButton: {fileID: 1270925056}
+  createButton: {fileID: 2083518894}
+  joinrandomButton: {fileID: 1654590099}
 --- !u!1 &893549454
 GameObject:
   m_ObjectHideFlags: 0
@@ -874,7 +876,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.024963379}
+  m_AnchoredPosition: {x: 0, y: 0.025024414}
   m_SizeDelta: {x: 0, y: -0.049988}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &893549456

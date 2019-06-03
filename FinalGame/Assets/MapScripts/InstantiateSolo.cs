@@ -32,8 +32,8 @@ public class InstantiateSolo : MonoBehaviour
 
             carCamActive = true;
         }
-       
-        
+
+        print(Lobby_Network.isNetMap);
         
     }
 

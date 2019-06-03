@@ -1815,8 +1815,11 @@ MonoBehaviour:
   localScripts:
   - {fileID: 8714685656083752028}
   - {fileID: 4065709549869078290}
+  - {fileID: 4065709549862019733}
+  - {fileID: 3500763375518510}
   localObject:
   - {fileID: 4065709548553867668}
+  - {fileID: 5447461794052319172, guid: 9ba94e109923b454cbb2546ba04c2fa1, type: 3}
 --- !u!1 &4065709549862019740
 GameObject:
   m_ObjectHideFlags: 0

@@ -53,20 +53,20 @@ public class SwapCamera : MonoBehaviour
             carCamera.SetActive(false);
             turretCamera.SetActive(true);
             shootButton.SetActive(true);
-            accelButton.SetActive(false);
-            shooterButton.SetActive(false);
+            accelButton.SetActive(true);
+            shooterButton.SetActive(true);
             driverButton.SetActive(true);
-            
+
         }
         else
         {
             carCamera.SetActive(true);
             turretCamera.SetActive(false);
-            shootButton.SetActive(false);
+            shootButton.SetActive(true);
             accelButton.SetActive(true);
-            driverButton.SetActive(false);
+            driverButton.SetActive(true);
             shooterButton.SetActive(true);
-            
+
 
         }
     }

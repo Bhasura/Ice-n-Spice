@@ -8,8 +8,10 @@ public class goBackToMenu : MonoBehaviourPunCallbacks
 {
    public void goMenu()
     {
+        PhotonNetwork.LeaveLobby();
+        PhotonNetwork.Disconnect();
         SceneManager.LoadScene(0);
-        
+        Lobby_Network.isNetMap = false;
     }
 
 

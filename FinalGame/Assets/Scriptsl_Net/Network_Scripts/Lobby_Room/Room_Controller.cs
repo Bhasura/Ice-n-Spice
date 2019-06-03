@@ -26,6 +26,7 @@ public class Room_Controller : MonoBehaviourPunCallbacks
     PhotonView pv;
     void Start()
     {
+        Lobby_Network.isNetMap = true;
         print(PhotonNetwork.CurrentRoom.Name);
         PhotonNetwork.AutomaticallySyncScene = true;
         endPanel.SetActive(false);
@@ -37,8 +38,7 @@ public class Room_Controller : MonoBehaviourPunCallbacks
     void Update()
     {
         child1 = player1.transform.Find("Turret").gameObject;
-        print(child1.transform.position);
-        print(child1.transform.rotation);
+
         info.text = "Current Room name: " + PhotonNetwork.CurrentRoom.Name + " Number of players in the room: " + PhotonNetwork.CurrentRoom.PlayerCount;
         if(PhotonNetwork.CurrentRoom.PlayerCount==2)
         {

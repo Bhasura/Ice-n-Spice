@@ -14,6 +14,9 @@ public class Lobby_Network : MonoBehaviourPunCallbacks
     public List<GameObject> roomprefabs = new List<GameObject>();
     List<RoomInfo> createdRooms = new List<RoomInfo>();
     public GameObject refreshButton;
+    public GameObject createButton;
+    public GameObject joinrandomButton;
+    public static bool isNetMap=false;
 
     TypedLobby sqlLobby = new TypedLobby("myLobby", LobbyType.SqlLobby);
 
@@ -22,16 +25,18 @@ public class Lobby_Network : MonoBehaviourPunCallbacks
         print("Connecting to Master Server.....");
         PhotonNetwork.AutomaticallySyncScene = true;
         refreshButton.SetActive(false);
+        createButton.SetActive(false);
+        joinrandomButton.SetActive(false);
         PhotonNetwork.ConnectUsingSettings();
         
     }
-   /* public void connecttoserverbutton()
+    public void connecttoserverbutton()
     {
-        print("Connecting to Master Server.....");
-        PhotonNetwork.AutomaticallySyncScene = true;
-        refreshButton.SetActive(false);
-        PhotonNetwork.ConnectUsingSettings();
-    }*/
+
+        print("Reconnecting to Master Server.....");
+
+        PhotonNetwork.Reconnect();
+    }
 
     void Update()
     {
@@ -130,6 +135,8 @@ public class Lobby_Network : MonoBehaviourPunCallbacks
     public override void OnJoinedLobby()
     {
         refreshButton.SetActive(true);
+        createButton.SetActive(true);
+        joinrandomButton.SetActive(true);
         print("You have Joined the game lobby.");
         OnRefreshRoomListClicked();
 
@@ -139,6 +146,8 @@ public class Lobby_Network : MonoBehaviourPunCallbacks
     public override void OnJoinedRoom()
     {
         print("You have Joined the room.");
+        isNetMap = true;
+
         
     }
 
@@ -163,6 +172,7 @@ public class Lobby_Network : MonoBehaviourPunCallbacks
     {
         refreshButton.SetActive(false);
         PhotonNetwork.JoinLobby();
+        
        
     }
 

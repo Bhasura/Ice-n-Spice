@@ -100,7 +100,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &4855217895038386267
 RectTransform:
   m_ObjectHideFlags: 0
@@ -201,7 +201,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4479916633416962715, guid: 4d8e39fd337f40f44acff898cce21361,
+      - m_Target: {fileID: 4065709549862019733, guid: 7b208692554200b4faf48afabd14a429,
           type: 3}
         m_MethodName: onSwapButtonClickedDriver
         m_Mode: 1
