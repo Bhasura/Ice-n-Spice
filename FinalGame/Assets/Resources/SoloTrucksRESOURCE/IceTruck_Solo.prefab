@@ -6566,6 +6566,7 @@ GameObject:
   - component: {fileID: 7784385483337252351}
   - component: {fileID: 7784385483348002914}
   - component: {fileID: 7653564270708614214}
+  - component: {fileID: 4885639998893380042}
   m_Layer: 0
   m_Name: IceTruck_Solo
   m_TagString: Untagged
@@ -6725,6 +6726,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   car: {fileID: 7784385485193722720}
   turret: {fileID: 7868864447740452489}
+--- !u!114 &4885639998893380042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7784385483348002925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bab9008ee6cbe07439a9d00495f2d5f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7784385483348002927
 GameObject:
   m_ObjectHideFlags: 0
@@ -7319,6 +7332,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Turret
       objectReference: {fileID: 0}
+    - target: {fileID: 4105969124882385401, guid: 92ea21b4ab811de44beec9124238e6ff,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4105969124882385405, guid: 92ea21b4ab811de44beec9124238e6ff,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8655110216158178075, guid: 92ea21b4ab811de44beec9124238e6ff,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7374,21 +7397,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4105969124882385405, guid: 92ea21b4ab811de44beec9124238e6ff,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4105969124882385401, guid: 92ea21b4ab811de44beec9124238e6ff,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4105969125467321185, guid: 92ea21b4ab811de44beec9124238e6ff,
-        type: 3}
-      propertyPath: force
-      value: 200
-      objectReference: {fileID: 0}
     - target: {fileID: 8655110216158178069, guid: 92ea21b4ab811de44beec9124238e6ff,
         type: 3}
       propertyPath: icecreamBullet
@@ -7400,12 +7408,17 @@ PrefabInstance:
       propertyPath: gunEnd
       value: 
       objectReference: {fileID: 7868864447657486045}
+    - target: {fileID: 4105969125467321185, guid: 92ea21b4ab811de44beec9124238e6ff,
+        type: 3}
+      propertyPath: force
+      value: 200
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8655110216158178069, guid: 92ea21b4ab811de44beec9124238e6ff, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 92ea21b4ab811de44beec9124238e6ff, type: 3}
---- !u!4 &3302729857878031471 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8655110216158178075, guid: 92ea21b4ab811de44beec9124238e6ff,
+--- !u!1 &7868864447740452493 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4105969124882385401, guid: 92ea21b4ab811de44beec9124238e6ff,
     type: 3}
   m_PrefabInstance: {fileID: 6181339661807589236}
   m_PrefabAsset: {fileID: 0}
@@ -7421,9 +7434,9 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 6181339661807589236}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &7868864447740452493 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4105969124882385401, guid: 92ea21b4ab811de44beec9124238e6ff,
+--- !u!4 &3302729857878031471 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8655110216158178075, guid: 92ea21b4ab811de44beec9124238e6ff,
     type: 3}
   m_PrefabInstance: {fileID: 6181339661807589236}
   m_PrefabAsset: {fileID: 0}

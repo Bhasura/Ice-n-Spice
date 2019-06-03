@@ -9,7 +9,7 @@ public class BulletScript : MonoBehaviour
 
     private void Update()
     {
-       //Destroy(gameObject, time);
+       Destroy(gameObject, time);
     }
 
     private void OnCollisionEnter(Collision collision)

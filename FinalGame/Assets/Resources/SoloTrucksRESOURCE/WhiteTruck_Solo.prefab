@@ -5880,6 +5880,7 @@ GameObject:
   - component: {fileID: 7200777252314574071}
   - component: {fileID: 7200777252303280490}
   - component: {fileID: 7340605432271942990}
+  - component: {fileID: 5012008903483391772}
   m_Layer: 0
   m_Name: WhiteTruck_Solo
   m_TagString: Untagged
@@ -6039,6 +6040,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   car: {fileID: 7200777250458298984}
   turret: {fileID: 7123057570002980737}
+--- !u!114 &5012008903483391772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7200777252303280485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bab9008ee6cbe07439a9d00495f2d5f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7200777252303280487
 GameObject:
   m_ObjectHideFlags: 0
@@ -7319,6 +7332,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Turret
       objectReference: {fileID: 0}
+    - target: {fileID: 4105969124882385401, guid: 92ea21b4ab811de44beec9124238e6ff,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4105969124882385405, guid: 92ea21b4ab811de44beec9124238e6ff,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8655110216158178075, guid: 92ea21b4ab811de44beec9124238e6ff,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7374,26 +7397,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4105969124882385405, guid: 92ea21b4ab811de44beec9124238e6ff,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4105969124882385401, guid: 92ea21b4ab811de44beec9124238e6ff,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8655110216158178070, guid: 92ea21b4ab811de44beec9124238e6ff,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: cf33add48a78823439aaf78af00323fb, type: 2}
-    - target: {fileID: 4105969125467321185, guid: 92ea21b4ab811de44beec9124238e6ff,
-        type: 3}
-      propertyPath: force
-      value: 200
-      objectReference: {fileID: 0}
     - target: {fileID: 8655110216158178069, guid: 92ea21b4ab811de44beec9124238e6ff,
         type: 3}
       propertyPath: icecreamBullet
@@ -7406,6 +7414,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 7868864447657486045, guid: 0df6e9bbed0495849b5e6fbec5ba660a,
         type: 3}
+    - target: {fileID: 4105969125467321185, guid: 92ea21b4ab811de44beec9124238e6ff,
+        type: 3}
+      propertyPath: force
+      value: 200
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8655110216158178069, guid: 92ea21b4ab811de44beec9124238e6ff, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 92ea21b4ab811de44beec9124238e6ff, type: 3}

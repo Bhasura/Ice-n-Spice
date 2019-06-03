@@ -11,32 +11,33 @@ using UnityEngine;
  * */
 public class EnemyHP : MonoBehaviour
 {
-    // The box's current health point total, which is initialised here as 60 units.
+    // The box's current health point total, which is initialised here as 100 units.
     // but can be changed in Unity's editor 
     public float currentHealth = 100f;
 
-    public GameObject floatingTextPrefab;
-
+    /// <summary>
+    /// Sets the enemy's health system that is affected by the shooter
+    /// 
+    /// </summary>
+    public void Start()
+    {
+        TextMesh healthInitial = (TextMesh)gameObject.GetComponentInChildren(typeof(TextMesh));
+        healthInitial.text = currentHealth + " Health";
+    }
     public void Damage(float damageAmount)
     {
-        if(floatingTextPrefab && currentHealth > 0)
-        {
-            ShowFloatingText();
-        }
-
-        // subtract gunDamage amount when Damage function is called
+        // The enemy takes damage and loses health
         currentHealth -= damageAmount;
-        
+
+        TextMesh healthPercent = (TextMesh)gameObject.GetComponentInChildren(typeof(TextMesh));
+        healthPercent.text = currentHealth + " Health";
+
         if (currentHealth <= 0)
         {
-            // if health has fallen below zero, enemy is deactivated
+            // If health has fallen below zero, enemy is deactivated
             gameObject.SetActive(false);
+            PlayerHp.tempGold = PlayerHp.tempGold + 100;
+            GlobalControl.Instance.gold += 100;
         }
-    }
-
-    private void ShowFloatingText()
-    {
-        var go = Instantiate(floatingTextPrefab, transform.position, Quaternion.identity, transform);
-        go.GetComponent<TextMesh>().text = currentHealth.ToString();
     }
 }

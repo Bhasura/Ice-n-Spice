@@ -22,6 +22,7 @@ public class UIManager : MonoBehaviour
     void Start()
     {
         Lobby_Network.isNetMap = false;
+        
         mainMenu.DOAnchorPos(Vector2.zero, 0.25f);
         stage2Completion();
         equipWhiteButton.SetActive(false);

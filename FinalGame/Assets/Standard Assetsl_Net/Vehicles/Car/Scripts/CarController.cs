@@ -69,15 +69,14 @@ namespace UnityStandardAssets.Vehicles.Car
 
             m_MaxHandbrakeTorque = float.MaxValue;
 
-            if (SceneManager.GetActiveScene().name == "TestSceneForMenu")
-            {
-                m_Rigidbody = InstantiateSolo.truckDef.GetComponent<Rigidbody>();
+            
+            m_Rigidbody = InstantiateSolo.truckDef.GetComponent<Rigidbody>();
 
-            }
-            else if (SceneManager.GetActiveScene().name == "Co-op_Level") 
+            
+          /*  else if (SceneManager.GetActiveScene().name == "Co-op_Level") 
             {
                 m_Rigidbody = GetComponent<Rigidbody>();
-            }
+            }*/
       
 
             m_CurrentTorque = m_FullTorqueOverAllWheels - (m_TractionControl*m_FullTorqueOverAllWheels);

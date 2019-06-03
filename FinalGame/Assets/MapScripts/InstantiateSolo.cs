@@ -18,11 +18,12 @@ public class InstantiateSolo : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        PlayerHp.tempGold = 0;
         if(GlobalControl.Instance.shopInventory[0] == 1)
         {
             truckDef = (GameObject)(Resources.Load("SoloTrucksRESOURCE/IceTruck_Solo"));
             truckDef = Instantiate(truckDef, spawnPoint.position, spawnPoint.rotation);
-
+            
             carCamActive = true;
         }
         if (GlobalControl.Instance.shopInventory[1] == 1)

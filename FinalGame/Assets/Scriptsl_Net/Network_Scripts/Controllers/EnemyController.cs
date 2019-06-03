@@ -17,34 +17,36 @@ public class EnemyController : MonoBehaviour
     void Start()
     {
         //GameObject t = GameObject.FindGameObjectWithTag("Player");
+        player = InstantiateSolo.truckDef;
         target = player.transform;
+        
         agent = GetComponent<NavMeshAgent>();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        float distance = Vector3.Distance(target.position, transform.position);
-       // Vector3 tPosition = target.position;
+       
+            float distance = Vector3.Distance(target.position, transform.position);
+            // Vector3 tPosition = target.position;
 
-        if (distance <= lookRadius)
-        {
-            agent.SetDestination(target.position);
-
-            if (distance <= agent.stoppingDistance)
+            if (distance <= lookRadius)
             {
-                FaceTarget();
-                Exploding();
+                agent.SetDestination(target.position);
+
+                if (distance <= agent.stoppingDistance)
+                {
+                    FaceTarget();
+                    Exploding();
+                }
             }
-        }
+        
+      
     }
 
     private void Exploding()
     {
-        //Instantiate(explosionEffect, transform.position, transform.rotation);
-        //explosionEffect.Play();
-       // StartCoroutine(cameraShake.Shake(0.15f, 0.4f));
-
         Destroy(this.gameObject);
         PlayerHp.health = PlayerHp.health - 10;
         print(PlayerHp.health);
