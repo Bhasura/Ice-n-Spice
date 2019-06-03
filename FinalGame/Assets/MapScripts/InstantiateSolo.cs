@@ -5,7 +5,7 @@ using UnityEngine;
 public class InstantiateSolo : MonoBehaviour
 {
     public static bool carCamActive;
-    public GameObject truckDef;
+    public static GameObject truckDef;
     public static GameObject child;
     public Transform spawnPoint;
 

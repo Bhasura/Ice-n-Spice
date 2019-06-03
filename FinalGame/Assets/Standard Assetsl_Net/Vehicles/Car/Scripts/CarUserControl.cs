@@ -30,7 +30,7 @@ namespace UnityStandardAssets.Vehicles.Car
             // v = mc.accelerateCar();
             v = MoveCar.carSpeed;
             m_Car.Move(h, v, v, 0f);
-            print("Accelerate button has been pressed.");
+
 
 
         }

@@ -11,6 +11,8 @@ public class UIManager : MonoBehaviour
     public GameObject optionsPanel;
     public GameObject S2Locked;
     public GameObject equipWhiteButton;
+    public GameObject buyWhiteButton;
+    public Text gold;
     public Player p;
    
     public Text tutorialCompletion;
@@ -32,11 +34,12 @@ public class UIManager : MonoBehaviour
         
         p.LoadPlayer();
         p.loadToGlobal();
-        print(GlobalControl.Instance.shopInventory[3]);
+        gold.text = "Gold : " + GlobalControl.Instance.gold;
         //if player has trucks in inventory saved show equip button
        if(GlobalControl.Instance.shopInventory[3] == 1)
         {
             equipWhiteButton.SetActive(true);
+            buyWhiteButton.SetActive(false);
         }
         
        
@@ -113,6 +116,7 @@ public class UIManager : MonoBehaviour
             p.loadFromGlobal();
             p.loadToGlobal();
             equipWhiteButton.SetActive(true);
+            buyWhiteButton.SetActive(false);
         }
         
     }

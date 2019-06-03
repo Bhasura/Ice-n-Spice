@@ -7,7 +7,6 @@ public class ReturnToMenu : MonoBehaviour
 {
     public GameObject endPanel;
     public GameObject settingsPanel;
-    public GameObject car;
     public GameObject spawnPoint;
     public GameObject tipPanel;
     public GameObject shootButton;
@@ -44,7 +43,8 @@ public class ReturnToMenu : MonoBehaviour
 
     public void respawnButton()
     {
-        car.transform.position = spawnPoint.transform.position;
+        InstantiateSolo.truckDef.transform.position = spawnPoint.transform.position;
+        InstantiateSolo.truckDef.transform.rotation = spawnPoint.transform.rotation;
     }
 
     void pauseScene()

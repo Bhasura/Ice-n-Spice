@@ -24,9 +24,6 @@ public class MoveCar : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
 
         isPointerDown = true;
         carSpeed = 0.1f;
-        print("Button CLicked");
-
-
 
     }
 
