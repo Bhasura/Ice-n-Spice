@@ -18,7 +18,7 @@ public class Room_Controller : MonoBehaviourPunCallbacks
     public GameObject endPanel;
     public GameObject startCube;
     public static GameObject child1;
-
+    public static GameObject child2;
 
     public Text info;
 
@@ -38,7 +38,7 @@ public class Room_Controller : MonoBehaviourPunCallbacks
     void Update()
     {
         child1 = player1.transform.Find("Turret").gameObject;
-
+        child2 = player2.transform.Find("Turret").gameObject;
         info.text = "Current Room name: " + PhotonNetwork.CurrentRoom.Name + " Number of players in the room: " + PhotonNetwork.CurrentRoom.PlayerCount;
         if(PhotonNetwork.CurrentRoom.PlayerCount==2)
         {

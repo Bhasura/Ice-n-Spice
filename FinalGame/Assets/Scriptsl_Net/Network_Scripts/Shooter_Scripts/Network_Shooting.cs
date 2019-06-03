@@ -27,13 +27,11 @@ public class Network_Shooting : MonoBehaviour
   */
     public void networkFire()
     {
-        
-        //ice = Instantiate(icecreamBullet, GunEnd.position, GunEnd.rotation) as Rigidbody;
-        //ice = PhotonNetwork.Instantiate(icecreamBullet.name, temp, GunEnd.rotation) as Rigidbody;
-        GameObject bullet = PhotonNetwork.Instantiate(icecreamBullet.name, Room_Controller.child1.transform.position , Room_Controller.child1.transform.rotation );
-        // ice.velocity = transform.forward * force;
-        bullet.GetComponent<Rigidbody>().AddForce(Room_Controller.child1.transform.forward * -force);
-       // bullet.GetComponent<Rigidbody>().AddForceAtPosition(Room_Controller.child1.transform.position * force, Room_Controller.child1.transform.position);
+        GameObject bullet1 = PhotonNetwork.Instantiate(icecreamBullet.name, Room_Controller.child1.transform.position, Room_Controller.child1.transform.rotation);
+        bullet1.GetComponent<Rigidbody>().AddForce(Room_Controller.child1.transform.forward * -force);
 
+
+        GameObject bullet2 = PhotonNetwork.Instantiate(icecreamBullet.name, Room_Controller.child2.transform.position, Room_Controller.child2.transform.rotation);
+        bullet2.GetComponent<Rigidbody>().AddForce(Room_Controller.child2.transform.forward * -force);
     }
 }
