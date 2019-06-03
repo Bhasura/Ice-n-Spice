@@ -18,6 +18,6 @@ public class PlayerHp : MonoBehaviour
     }
     public void Update()
     {
-        gText.GetComponent<TextMeshProUGUI>().SetText(tempGold + " Gold");
+        gText.GetComponent<TextMeshProUGUI>().SetText(tempGold + " Gold Earned");
     }
 }
