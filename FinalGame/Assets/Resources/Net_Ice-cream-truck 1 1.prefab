@@ -196,7 +196,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3571578578807534034}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18581a8d3693ee4c82aa81e02e4fe5d, type: 3}
   m_Name: 
@@ -231,7 +231,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icecreamBullet: {fileID: 5227414947862299277, guid: 64b90c5da5c0a75468f60adc79fdbd5b,
     type: 3}
-  force: 200
+  force: 500
 --- !u!1 &4064637482518205535
 GameObject:
   m_ObjectHideFlags: 0
@@ -326,7 +326,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4065709548553867669
 Transform:
   m_ObjectHideFlags: 0
@@ -1660,7 +1660,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icecreamBullet: {fileID: 5227414947862299277, guid: 64b90c5da5c0a75468f60adc79fdbd5b,
     type: 3}
-  force: 100
+  force: 500
 --- !u!114 &4065709549869078290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7123,7 +7123,7 @@ ParticleSystem:
 --- !u!199 &4065709549844054576
 ParticleSystemRenderer:
   serializedVersion: 6
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -7527,7 +7527,7 @@ GameObject:
   - component: {fileID: 4065709549860092970}
   m_Layer: 0
   m_Name: ColliderBody
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7652,7 +7652,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8175931097718706992
 Transform:
   m_ObjectHideFlags: 0

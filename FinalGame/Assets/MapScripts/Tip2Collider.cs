@@ -13,7 +13,7 @@ public class Tip2Collider : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(Triggered == false)
+        if(Triggered == false && other.tag == "Player")
         {
             tip1.SetActive(true);
             Time.timeScale = 0f;

@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class Room_Controller : MonoBehaviourPunCallbacks
 {
@@ -93,13 +95,28 @@ public class Room_Controller : MonoBehaviourPunCallbacks
 
     public void onLeaveButtonClicked()
     {
-        Time.timeScale = 1f;
+       // Time.timeScale = 1f;
         PhotonNetwork.LeaveRoom();
-        PhotonNetwork.LoadLevel("Co-op_Lobby");
+        //PhotonNetwork.LoadLevel("Co-op_Lobby");
         PhotonNetwork.LeaveLobby();
-        PhotonNetwork.JoinLobby();
-        
+        PhotonNetwork.Disconnect();
+
     }
+    public void LoadLevel(int sceneIndex)
+
+    {
+        StartCoroutine(LoadAsynchronously(sceneIndex));
+
+    }
+
+    IEnumerator LoadAsynchronously(int sceneIndex)
+    {
+
+        AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex);
+        yield return null;
+    }
+
+
     public override void OnLeftRoom()
     {
         if(player1.gameObject==null)

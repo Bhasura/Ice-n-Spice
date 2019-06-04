@@ -12,7 +12,6 @@ public class PlayerHp : MonoBehaviour
     public void Start()
     {
         gText = GameObject.Find("GoldTextMesh");
-        print(gText.name);
         gText.GetComponent<TextMeshProUGUI>().SetText(tempGold + " Gold Earned");
        
     }

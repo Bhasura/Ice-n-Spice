@@ -36,6 +36,7 @@ public class TestCollision : MonoBehaviour
         else if (SceneManager.GetActiveScene().name == "Stage2" && other.tag == "Player")
         {
             endPanel.SetActive(true);
+            complete[0] = 100;
             complete[1] = 100;
             gold = 10000;
             saveToGlobal();
