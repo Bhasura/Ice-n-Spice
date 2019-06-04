@@ -48,6 +48,14 @@ public class UIManager : MonoBehaviour
     }
 
     // Update is called once per frame
+    public void Update()
+    {
+        if(GlobalControl.Instance.shopUpdate == true)
+        {
+            gold.text = "Gold : " + GlobalControl.Instance.gold;
+            GlobalControl.Instance.shopUpdate = false;
+        }
+    }
     //in main menu
     public void resetGame()
     {
@@ -119,6 +127,7 @@ public class UIManager : MonoBehaviour
             p.loadToGlobal();
             equipWhiteButton.SetActive(true);
             buyWhiteButton.SetActive(false);
+            GlobalControl.Instance.shopUpdate = true;
         }
         
     }
