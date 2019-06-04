@@ -13,6 +13,7 @@ public class GlobalControl : MonoBehaviour
     public int gold = 1000;
 
     public bool needUpdate = false;
+    public bool shopUpdate = false;
 
     void Awake()
     {
