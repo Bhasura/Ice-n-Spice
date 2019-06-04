@@ -26,7 +26,7 @@ public class UIManager : MonoBehaviour
         mainMenu.DOAnchorPos(Vector2.zero, 0.25f);
         stage2Completion();
         equipWhiteButton.SetActive(false);
-
+        gold.text = "Gold : " + GlobalControl.Instance.gold;
         //used when you finish a stage
         if(GlobalControl.Instance.needUpdate == true)
         {

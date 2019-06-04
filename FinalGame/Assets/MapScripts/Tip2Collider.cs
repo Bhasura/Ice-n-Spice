@@ -17,7 +17,7 @@ public class Tip2Collider : MonoBehaviour
         {
             tip1.SetActive(true);
             Time.timeScale = 0f;
-            text.text = "Tip 2 : tilt the phone to steer and avoid obstacles";
+            text.text = "Tip 2 : tilt the phone to steer and avoid obstacles. Keep an eye out for an enemy Pepper!!!";
             Triggered = true;
         }
         

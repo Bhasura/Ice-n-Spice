@@ -17,7 +17,7 @@ public class Tip1Collider : MonoBehaviour
         {
             tip1.SetActive(true);
             Time.timeScale = 0f;
-            text.text = "Tip 1 : Tap the accelerator to move and the break to stop";
+            text.text = "Tip 1 : Tap the accelerator to move and the break to stop. Also stick the road....dont say i didnt warn you!";
             triggered = true;
         }
            
