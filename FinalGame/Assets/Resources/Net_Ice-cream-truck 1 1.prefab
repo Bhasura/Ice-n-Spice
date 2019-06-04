@@ -1748,6 +1748,7 @@ MonoBehaviour:
     type: 3}
   driverButton: {fileID: 7396156368277743150, guid: cff9b9012b1866144af37a9baec7b9d5,
     type: 3}
+  turretRotation: {fileID: 3571578578807534032}
 --- !u!114 &8714685656083752028
 MonoBehaviour:
   m_ObjectHideFlags: 0

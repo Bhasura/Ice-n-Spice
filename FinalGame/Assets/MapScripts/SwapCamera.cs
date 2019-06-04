@@ -11,13 +11,14 @@ public class SwapCamera : MonoBehaviour
     public GameObject shooterButton;
     public GameObject driverButton;
     public static bool carCamActive;
-
+    [SerializeField] public MonoBehaviour turretRotation;
+    
     void Start()
     {
         carCamera.SetActive(true);
         carCamActive = true;
         turretCamera.SetActive(false);
-
+        turretRotation.enabled = false;
 
     }
 
@@ -51,7 +52,7 @@ public class SwapCamera : MonoBehaviour
     {
         if (carCamActive == false)
         {
-
+            turretRotation.enabled = true;
             carCamera.SetActive(false);
             turretCamera.SetActive(true);
             shootButton.SetActive(true);
@@ -62,7 +63,7 @@ public class SwapCamera : MonoBehaviour
         }
         else
         {
-
+            turretRotation.enabled = false;
             carCamera.SetActive(true);
             turretCamera.SetActive(false);
             shootButton.SetActive(true);
