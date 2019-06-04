@@ -1817,6 +1817,7 @@ MonoBehaviour:
   - {fileID: 4065709549869078290}
   - {fileID: 4065709549862019733}
   - {fileID: 3500763375518510}
+  - {fileID: 3571578578807534032}
   localObject:
   - {fileID: 4065709548553867668}
   - {fileID: 5447461794052319172, guid: 9ba94e109923b454cbb2546ba04c2fa1, type: 3}
@@ -7121,7 +7122,7 @@ ParticleSystem:
 --- !u!199 &4065709549844054576
 ParticleSystemRenderer:
   serializedVersion: 6
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}

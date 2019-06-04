@@ -18,6 +18,7 @@ public class SwapCamera : MonoBehaviour
         carCamActive = true;
         turretCamera.SetActive(false);
 
+
     }
 
 
@@ -25,7 +26,7 @@ public class SwapCamera : MonoBehaviour
     public void onSwapButtonClickedShooter()
     {
 
-
+        
         carCamActive = false;
         Update();
 
@@ -37,7 +38,7 @@ public class SwapCamera : MonoBehaviour
     public void onSwapButtonClickedDriver()
     {
 
-
+       
         carCamActive = true;
         Update();
 
@@ -50,6 +51,7 @@ public class SwapCamera : MonoBehaviour
     {
         if (carCamActive == false)
         {
+
             carCamera.SetActive(false);
             turretCamera.SetActive(true);
             shootButton.SetActive(true);
@@ -60,6 +62,7 @@ public class SwapCamera : MonoBehaviour
         }
         else
         {
+
             carCamera.SetActive(true);
             turretCamera.SetActive(false);
             shootButton.SetActive(true);
